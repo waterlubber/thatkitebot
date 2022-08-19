@@ -22,6 +22,8 @@ class UwuCog(commands.Cog, name="UwU Commands"):
 
     @commands.Cog.listener()
     async def on_message(self, message: discord.Message):
+        return
+    """
         # Check if the user is a bot 
         if message.author.bot:
             return
@@ -64,7 +66,7 @@ class UwuCog(commands.Cog, name="UwU Commands"):
                                    username=message.author.name + "#" + message.author.discriminator,
                                    avatar_url=message.author.display_avatar.url,
                                    files=files)
-
+    """
     # Sorry mom
     @commands.check(can_change_settings)
     @bridge.bridge_command(name="uwu_channel", aliases=["uwuchannel", "uwuch"],
